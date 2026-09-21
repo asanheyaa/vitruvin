@@ -1,0 +1,1680 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Vitruvin">
+	<link rel="stylesheet" href="css/nouislider.min.css">
+	<link rel="stylesheet" href="css/main-styles.css">
+
+
+
+	<title>Vitruvin</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="quize-message">
+			<div class="quize-message__container">
+				Up to 90-Day Money-Back Guarantee • Free US Shipping
+			</div>
+		</div>
+		<header class="quize-header">
+			<div class="quize-header__container">
+				<button class='burger-menu'>
+					<span class="burger-menu__wrapper">
+						<span class='burger-menu__line burger-menu__line-1'></span>
+						<span class='burger-menu__line burger-menu__line-2'></span>
+						<span class='burger-menu__line burger-menu__line-3'></span>
+					</span>
+				</button>
+				<a href="/" class="quize-header__logo">
+					<svg>
+						<use xlink:href='img/icons/icons-sprite.svg#logo'></use>
+					</svg>
+				</a>
+				<nav class='header-menu'>
+					<ul class='header-menu__list'>
+						<li class='header-menu__item'>
+							<a href='#' class='header-menu__link'>Shop</a>
+						</li>
+						<li class='header-menu__item'>
+							<a href='#' class='header-menu__link'>Our Story</a>
+						</li>
+						<li class='header-menu__item'>
+							<a href='#' class='header-menu__link'>Affiliate</a>
+						</li>
+						<li class='header-menu__item'>
+							<a href='#' class='header-menu__link'>Articles</a>
+						</li>
+						<li class='header-menu__item'>
+							<a href='#' class='header-menu__link'>Quality</a>
+						</li>
+						<li class='header-menu__item'>
+							<a href='#' class='header-menu__link'>Wholesale</a>
+						</li>
+						<li class='header-menu__item'>
+							<a href='#' class='header-menu__link'>Clinical Trial</a>
+						</li>
+						<li class='header-menu__item'>
+							<a href='#' class='header-menu__link'>Consultation</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="quize-header__actions">
+					<ul class="quize-header__list">
+						<li class="quize-header__item" data-da=".header-menu__list,768,last">
+							<a href="#" class="quize-header__link">
+								<span class="quize-header__icon">
+									<img src="img/icons/person-icon.png" alt="account icon">
+								</span>
+								<span class="quize-header__text">
+									Account
+								</span>
+							</a>
+						</li>
+						<li class="quize-header__item">
+							<a href="#" class="quize-header__link">
+								<span class="quize-header__icon">
+									<img src="img/icons/cart-icon.png" alt="cart icon">
+								</span>
+								<span class="quize-header__text">
+									Cart 
+								</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<main class="page page-quize">
+			<section class='quize'>
+				<div class='quize__container'>
+					<form action="#" class="form-quize" data-quize="main">
+						<fieldset class="form-quize__fieldset _active" data-quize-section="1">
+							<h1 class="form-quize__title form-quize__title-01">
+								To personalize
+								your result:
+							</h1>
+							<div class="form-quize__items">
+								<div class="form-quize__item form-quize__item-alt">
+									<label class="form-quize__custom-checkbox form-quize__custom-checkbox-ratio">
+										<input type="radio" name="gender" class="form-quize__input">
+										<span class="form-quize__radio-checkmark"></span>
+										Male
+									</label>
+								</div>
+								<div class="form-quize__item form-quize__item-alt form-quize__item-dark">
+									<label class="form-quize__custom-checkbox form-quize__custom-checkbox-ratio">
+										<input type="radio" name="gender" class="form-quize__input">
+										<span class="form-quize__radio-checkmark"></span>
+										Female
+									</label>
+								</div>
+								<div class="form-quize__item form-quize__item-alt">
+									<label class="form-quize__custom-checkbox form-quize__custom-checkbox-ratio">
+										<input type="radio" name="gender" class="form-quize__input">
+										<span class="form-quize__radio-checkmark"></span>
+										Prefer not to say
+									</label>
+								</div>
+							</div>
+							<button type="button" class="form-quize__trigger-button" data-quize-trigger>
+								Next Question
+							</button>
+						</fieldset>
+						<fieldset class="form-quize__fieldset" data-quize-section="2">
+							<h2 class="form-quize__title form-quize__title-02">
+								How old are you?
+							</h2>
+							<div class="form-quize__subtitle form-quize__subtitle-01">
+								Your metabolism changes with age — this helps us read your answers.
+							</div>
+							<div class="form-quize__slider">
+								<div class="form-quize__slider-value" id="age-slider-value">35</div>
+								<div class="form-quize__slider-wrapper">
+									<div class="form-quize__slider-body" id="age-slider">
+									</div>
+									<div class="form-quize__slider-values">
+										<div class="form-quize__slider-min" id="age-slider-min"></div>
+										<div class="form-quize__slider-max" id="age-slider-max"></div>
+									</div>
+								</div>
+
+
+							</div>
+							<button type="button" class="form-quize__trigger-button" data-quize-trigger="no-validate">
+								Next Question
+							</button>
+						</fieldset>
+						<fieldset class="form-quize__fieldset" data-quize-section="3">
+
+							<div class="params-form-quize">
+								<div class="params-form-quize__items">
+									<div class="params-form-quize__item">
+										<h2 class="form-quize__title form-quize__title-03">What is your height?</h2>
+										<div class="params-form-quize__body">
+											<input type="number" name="Height" class="params-form-quize__input"
+												placeholder="Enter your height">
+											<div class="select" data-select-menu>
+												<button class="select__header" type="button"
+													aria-label="Chose your system of measurement"
+													data-select-menu-button>
+													<span class="select__value" data-select-menu-value>ft/in</span>
+													<span class="select__arrow-icon">
+														<svg>
+															<use xlink:href='img/icons/icons-sprite.svg#select-arrow'>
+															</use>
+														</svg>
+													</span>
+												</button>
+												<ul class="select__body" data-select-menu-drop-down>
+													<li class="select__item" data-select-menu-option>
+														cm
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="params-form-quize__item">
+										<h2 class="form-quize__title form-quize__title-03">What is your weight?</h2>
+										<div class="params-form-quize__body">
+											<input type="number" name="weight" class="params-form-quize__input"
+												placeholder="Enter your weight">
+											<div class="select" data-select-menu>
+												<button class="select__header" type="button"
+													aria-label="Chose your system of measurement"
+													data-select-menu-button>
+													<span class="select__value" data-select-menu-value>lb</span>
+													<span class="select__arrow-icon">
+														<svg>
+															<use xlink:href='img/icons/icons-sprite.svg#select-arrow'>
+															</use>
+														</svg>
+													</span>
+												</button>
+												<ul class="select__body" data-select-menu-drop-down>
+													<li class="select__item" data-select-menu-option>
+														kg
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="params-form-quize__description">
+									Used only to calculate your result. Never shared.
+								</div>
+							</div>
+							<div class="form-quize__buttons">
+								<button type="button" class="form-quize__trigger-button" data-quize-trigger>
+									Next Question
+								</button>
+								<button type="button" class="form-quize__trigger-button form-quize__trigger-button-alt"
+									data-quize-trigger="no-validate">
+									Prefer not to say
+								</button>
+							</div>
+
+						</fieldset>
+						<fieldset class="form-quize__fieldset" data-quize-section="4">
+							<h2 class="form-quize__title form-quize__title-04">
+								Are you currently losing weight - or planning to?
+							</h2>
+							<div class="form-quize__items form-quize__items-02">
+								<div class="form-quize__item ">
+									<label class="form-quize__custom-checkbox form-quize__custom-checkbox-ratio">
+										<input type="radio" name="currently" class="form-quize__input">
+										<span class="form-quize__radio-checkmark"></span>
+										Yes - I’m on a GLP-1 medication
+									</label>
+								</div>
+								<div class="form-quize__item ">
+									<label class="form-quize__custom-checkbox form-quize__custom-checkbox-ratio">
+										<input type="radio" name="currently" class="form-quize__input">
+										<span class="form-quize__radio-checkmark"></span>
+										Yes – considering a GLP-1
+									</label>
+								</div>
+								<div class="form-quize__item">
+									<label class="form-quize__custom-checkbox form-quize__custom-checkbox-ratio">
+										<input type="radio" name="currently" class="form-quize__input">
+										<span class="form-quize__radio-checkmark"></span>
+										Yes - dieting on my own
+									</label>
+								</div>
+								<div class="form-quize__item">
+									<label class="form-quize__custom-checkbox form-quize__custom-checkbox-ratio">
+										<input type="radio" name="currently" class="form-quize__input">
+										<span class="form-quize__radio-checkmark"></span>
+										Trying, but the scale won’t move
+									</label>
+								</div>
+								<div class="form-quize__item">
+									<label class="form-quize__custom-checkbox form-quize__custom-checkbox-ratio">
+										<input type="radio" name="currently" class="form-quize__input">
+										<span class="form-quize__radio-checkmark"></span>
+										No, not right now
+									</label>
+								</div>
+							</div>
+							<button type="button" class="form-quize__trigger-button" data-quize-trigger>
+								Next Question
+							</button>
+						</fieldset>
+						<fieldset class="form-quize__fieldset" data-quize-section="5">
+							<h2 class="form-quize__title form-quize__title-05">
+								What matters most right now?
+							</h2>
+							<div class="form-quize__subtitle form-quize__subtitle-02">
+								Select all that apply:
+							</div>
+							<div class="form-quize__items form-quize__items-03">
+								<div class="form-quize__item ">
+									<label class="form-quize__custom-checkbox ">
+										<input type="radio" name="lose-weight" class="form-quize__input">
+										<span class="form-quize__checkmark"></span>
+										Lose weight without losing strength
+									</label>
+								</div>
+								<div class="form-quize__item ">
+									<label class="form-quize__custom-checkbox ">
+										<input type="radio" name="stop-energy-crashes" class="form-quize__input">
+										<span class="form-quize__checkmark"></span>
+										Stop the energy crashes while dieting
+									</label>
+								</div>
+								<div class="form-quize__item">
+									<label class="form-quize__custom-checkbox">
+										<input type="radio" name="keep-weight" class="form-quize__input">
+										<span class="form-quize__checkmark"></span>
+										Keep the weight off this time
+									</label>
+								</div>
+								<div class="form-quize__item">
+									<label class="form-quize__custom-checkbox">
+										<input type="radio" name="keep-muscle" class="form-quize__input">
+										<span class="form-quize__checkmark"></span>
+										Keep muscle while the scale drops
+									</label>
+								</div>
+								<div class="form-quize__item">
+									<label class="form-quize__custom-checkbox">
+										<input type="radio" name="more-energy" class="form-quize__input">
+										<span class="form-quize__checkmark"></span>
+										Just have more energy
+									</label>
+								</div>
+							</div>
+							<button type="button" class="form-quize__trigger-button" data-quize-trigger>
+								Next Question
+							</button>
+						</fieldset>
+						<fieldset class="form-quize__fieldset" data-quize-section="6">
+							<h2 class="form-quize__title form-quize__title-06">
+								What usually happens when you try to lose weight?
+							</h2>
+							<div class="form-quize__items form-quize__items-04">
+								<div class="form-quize__item form-quize__item-alt">
+									<label class="form-quize__custom-checkbox form-quize__custom-checkbox-ratio">
+										<input type="radio" name="lose-weight" class="form-quize__input">
+										<span class="form-quize__radio-checkmark"></span>
+										I lose it, then regain it
+									</label>
+								</div>
+								<div class="form-quize__item form-quize__item-alt form-quize__item-dark">
+									<label class="form-quize__custom-checkbox form-quize__custom-checkbox-ratio">
+										<input type="radio" name="lose-weight" class="form-quize__input">
+										<span class="form-quize__radio-checkmark"></span>
+										I plateau after a few weeks
+									</label>
+								</div>
+								<div class="form-quize__item form-quize__item-alt">
+									<label class="form-quize__custom-checkbox form-quize__custom-checkbox-ratio">
+										<input type="radio" name="lose-weight" class="form-quize__input">
+										<span class="form-quize__radio-checkmark"></span>
+										I get too tired to keep going
+									</label>
+								</div>
+								<div class="form-quize__item form-quize__item-alt">
+									<label class="form-quize__custom-checkbox form-quize__custom-checkbox-ratio">
+										<input type="radio" name="lose-weight" class="form-quize__input">
+										<span class="form-quize__radio-checkmark"></span>
+										I lose it but feel weaker
+									</label>
+								</div>
+								<div class="form-quize__item form-quize__item-alt">
+									<label class="form-quize__custom-checkbox form-quize__custom-checkbox-ratio">
+										<input type="radio" name="lose-weight" class="form-quize__input">
+										<span class="form-quize__radio-checkmark"></span>
+										This is my first real attempt
+									</label>
+								</div>
+							</div>
+							<button type="button" class="form-quize__trigger-button" data-quize-trigger>
+								Next Question
+							</button>
+						</fieldset>
+						<fieldset class="form-quize__fieldset" data-quize-section="7">
+							<h2 class="form-quize__title form-quize__title-07">
+								How’s your energy across
+								a typical day?
+							</h2>
+							<div class="columns-form-quize">
+								<div class="columns-form-quize__item">
+									<label class="columns-form-quize__label">
+										<input type="radio" name="energy" class="columns-form-quize__input">
+										<span class="columns-form-quize__icon">
+											<svg>
+												<use xlink:href='img/icons/icons-sprite.svg#quiz-icon_01'></use>
+											</svg>
+										</span>
+										Strong from morning to night
+									</label>
+								</div>
+								<div class="columns-form-quize__item">
+									<label class="columns-form-quize__label">
+										<input type="radio" name="energy" class="columns-form-quize__input">
+										<span class="columns-form-quize__icon">
+											<svg>
+												<use xlink:href='img/icons/icons-sprite.svg#quiz-icon_02'></use>
+											</svg>
+										</span>
+										Fine until
+										mid-afternoon dip
+									</label>
+								</div>
+								<div class="columns-form-quize__item">
+									<label class="columns-form-quize__label">
+										<input type="radio" name="energy" class="columns-form-quize__input">
+										<span class="columns-form-quize__icon">
+											<svg>
+												<use xlink:href='img/icons/icons-sprite.svg#quiz-icon_03'></use>
+											</svg>
+										</span>
+										Up and down
+										all day
+									</label>
+								</div>
+								<div class="columns-form-quize__item">
+									<label class="columns-form-quize__label">
+										<input type="radio" name="energy" class="columns-form-quize__input">
+										<span class="columns-form-quize__icon">
+											<svg>
+												<use xlink:href='img/icons/icons-sprite.svg#quiz-icon_04'></use>
+											</svg>
+										</span>
+										Running low
+										from the start
+									</label>
+								</div>
+							</div>
+							<button type="button" class="form-quize__trigger-button" data-quize-trigger>
+								Next Question
+							</button>
+						</fieldset>
+						<fieldset class="form-quize__fieldset " data-quize-section="8">
+							<h2 class="form-quize__title form-quize__title-08">
+								Be honest - how’s your coffee situation?
+							</h2>
+							<div class="columns-form-quize columns-form-quize-02">
+								<div class="columns-form-quize__item">
+									<label class="columns-form-quize__label">
+										<input type="radio" name="coffee" class="columns-form-quize__input">
+
+										Don’t really
+										need it
+									</label>
+								</div>
+								<div class="columns-form-quize__item">
+									<label class="columns-form-quize__label">
+										<input type="radio" name="coffee" class="columns-form-quize__input">
+
+										1-2 cups
+										to keep moving
+									</label>
+								</div>
+								<div class="columns-form-quize__item">
+									<label class="columns-form-quize__label">
+										<input type="radio" name="coffee" class="columns-form-quize__input">
+
+										3+ cups and still tired
+									</label>
+								</div>
+								<div class="columns-form-quize__item">
+									<label class="columns-form-quize__label">
+										<input type="radio" name="coffee" class="columns-form-quize__input">
+
+										Coffee stopped working
+									</label>
+								</div>
+							</div>
+							<button type="button" class="form-quize__trigger-button" data-quize-trigger>
+								Next Question
+							</button>
+						</fieldset>
+						<fieldset class="form-quize__fieldset" data-quize-section="9">
+							<h2 class="form-quize__title form-quize__title-09">
+								After a hard workout - or just a long, physical day - how long until you feel like
+								yourself again?
+							</h2>
+							<div class="form-quize__items form-quize__items-05">
+								<div class="form-quize__item ">
+									<label class="form-quize__custom-checkbox form-quize__custom-checkbox-ratio">
+										<input type="radio" name="recovery" class="form-quize__input">
+										<span class="form-quize__radio-checkmark"></span>
+										By the next morning
+									</label>
+								</div>
+								<div class="form-quize__item ">
+									<label class="form-quize__custom-checkbox form-quize__custom-checkbox-ratio">
+										<input type="radio" name="recovery" class="form-quize__input">
+										<span class="form-quize__radio-checkmark"></span>
+										A day or two
+									</label>
+								</div>
+								<div class="form-quize__item">
+									<label class="form-quize__custom-checkbox form-quize__custom-checkbox-ratio">
+										<input type="radio" name="recovery" class="form-quize__input">
+										<span class="form-quize__radio-checkmark"></span>
+										Most of the week
+									</label>
+								</div>
+								<div class="form-quize__item">
+									<label class="form-quize__custom-checkbox form-quize__custom-checkbox-ratio">
+										<input type="radio" name="recovery" class="form-quize__input">
+										<span class="form-quize__radio-checkmark"></span>
+										I avoid hard effort these days
+									</label>
+								</div>
+
+							</div>
+							<button type="button" class="form-quize__trigger-button" data-quize-trigger>
+								Next Question
+							</button>
+						</fieldset>
+						<fieldset class="form-quize__fieldset" data-quize-section="10">
+							<h2 class="form-quize__title form-quize__title-10">
+								Which of these sound familiar?
+							</h2>
+							<div class="form-quize__subtitle form-quize__subtitle-03">
+								Select all that apply:
+							</div>
+							<div class="form-quize__items form-quize__items-grid form-quize__items-06">
+								<div class="form-quize__item ">
+									<label class="form-quize__custom-checkbox ">
+										<input type="radio" name="wake-up-tired " class="form-quize__input">
+										<span class="form-quize__checkmark"></span>
+										I wake up tired even after a full night
+									</label>
+								</div>
+								<div class="form-quize__item ">
+									<label class="form-quize__custom-checkbox ">
+										<input type="radio" name="brain-fog" class="form-quize__input">
+										<span class="form-quize__checkmark"></span>
+										Afternoon brain fog
+									</label>
+								</div>
+								<div class="form-quize__item ">
+									<label class="form-quize__custom-checkbox ">
+										<input type="radio" name="muscle-tone" class="form-quize__input">
+										<span class="form-quize__checkmark"></span>
+										My muscle tone isn't what it was
+									</label>
+								</div>
+								<div class="form-quize__item ">
+									<label class="form-quize__custom-checkbox ">
+										<input type="radio" name="grip-weaker" class="form-quize__input">
+										<span class="form-quize__checkmark"></span>
+										My lifts or grip feel weaker
+									</label>
+								</div>
+								<div class="form-quize__item ">
+									<label class="form-quize__custom-checkbox ">
+										<input type="radio" name="don't-better" class="form-quize__input">
+										<span class="form-quize__checkmark"></span>
+										The scale moves but I don't feel better
+									</label>
+								</div>
+								<div class="form-quize__item ">
+									<label class="form-quize__custom-checkbox ">
+										<input type="radio" name="hungry-tired" class="form-quize__input">
+										<span class="form-quize__checkmark"></span>
+										I get hungry-tired instead
+										of hungry
+									</label>
+								</div>
+								<div class="form-quize__item ">
+									<label class="form-quize__custom-checkbox ">
+										<input type="radio" name="none" class="form-quize__input">
+										<span class="form-quize__checkmark"></span>
+										None of these
+									</label>
+								</div>
+
+							</div>
+							<button type="button" class="form-quize__trigger-button" data-quize-trigger>
+								Next Question
+							</button>
+						</fieldset>
+						<fieldset
+							class="form-quize__fieldset form-quize__fieldset-alt form-quize__fieldset-hide-progress"
+							data-quize-section="11" data-quize-section-no-count>
+							<h2 class="form-quize__title form-quize__title-11">
+								Eating less is only half of it.
+							</h2>
+
+							<div class="brochure-form-quize">
+								<div class="brochure-form-quize__image">
+									<img src="img/quize-page/quize-image_01.webp" alt="Eating less is only half of it.">
+								</div>
+								<div class="brochure-form-quize__description">
+									<p>
+										Your cells run on a molecule called NAD+ — it's how they turn food, and stored
+										fat, into energy. By your 40s you're
+										making about half what you made at 20. Put a diet on top and you're asking your
+										cells to do their hardest work with the
+										least support. A few more questions and we'll show you where yours is leaking.
+									</p>
+								</div>
+							</div>
+							<button type="button"
+								class="form-quize__trigger-button form-quize__trigger-button-secondary"
+								data-quize-trigger>
+								Continue
+							</button>
+						</fieldset>
+						<fieldset class="form-quize__fieldset " data-quize-section="12">
+							<h2 class="form-quize__title form-quize__title-12">
+								How do you usually
+								wake up?
+							</h2>
+							<div class="form-quize__items form-quize__items-07">
+								<div class="form-quize__item form-quize__item-alt">
+									<label class="form-quize__custom-checkbox form-quize__custom-checkbox-ratio">
+										<input type="radio" name="wake-up" class="form-quize__input">
+										<span class="form-quize__radio-checkmark"></span>
+										Refreshed and ready
+									</label>
+								</div>
+								<div class="form-quize__item form-quize__item-alt form-quize__item-dark">
+									<label class="form-quize__custom-checkbox form-quize__custom-checkbox-ratio">
+										<input type="radio" name="wake-up" class="form-quize__input">
+										<span class="form-quize__radio-checkmark"></span>
+										Okay, after some time (and coffee)
+									</label>
+								</div>
+								<div class="form-quize__item form-quize__item-alt">
+									<label class="form-quize__custom-checkbox form-quize__custom-checkbox-ratio">
+										<input type="radio" name="wake-up" class="form-quize__input">
+										<span class="form-quize__radio-checkmark"></span>
+										Tired most mornings
+									</label>
+								</div>
+								<div class="form-quize__item form-quize__item-alt">
+									<label class="form-quize__custom-checkbox form-quize__custom-checkbox-ratio">
+										<input type="radio" name="wake-up" class="form-quize__input">
+										<span class="form-quize__radio-checkmark"></span>
+										Exhausted, no matter how long I slept
+									</label>
+								</div>
+							</div>
+							<button type="button" class="form-quize__trigger-button" data-quize-trigger>
+								Next Question
+							</button>
+						</fieldset>
+						<fieldset class="form-quize__fieldset" data-quize-section="13">
+							<h2 class="form-quize__title form-quize__title-13">
+								How would you rate your stress, day to day?
+							</h2>
+							<div class="form-quize__items form-quize__items-07">
+								<div class="form-quize__item form-quize__item-alt">
+									<label class="form-quize__custom-checkbox form-quize__custom-checkbox-ratio">
+										<input type="radio" name="stress" class="form-quize__input">
+										<span class="form-quize__radio-checkmark"></span>
+										Low
+									</label>
+								</div>
+								<div class="form-quize__item form-quize__item-alt form-quize__item-dark">
+									<label class="form-quize__custom-checkbox form-quize__custom-checkbox-ratio">
+										<input type="radio" name="stress" class="form-quize__input">
+										<span class="form-quize__radio-checkmark"></span>
+										Manageable
+									</label>
+								</div>
+								<div class="form-quize__item form-quize__item-alt">
+									<label class="form-quize__custom-checkbox form-quize__custom-checkbox-ratio">
+										<input type="radio" name="stress" class="form-quize__input">
+										<span class="form-quize__radio-checkmark"></span>
+										High
+									</label>
+								</div>
+								<div class="form-quize__item form-quize__item-alt">
+									<label class="form-quize__custom-checkbox form-quize__custom-checkbox-ratio">
+										<input type="radio" name="stress" class="form-quize__input">
+										<span class="form-quize__radio-checkmark"></span>
+										Through the roof
+									</label>
+								</div>
+							</div>
+							<button type="button" class="form-quize__trigger-button" data-quize-trigger>
+								Next Question
+							</button>
+						</fieldset>
+						<fieldset class="form-quize__fieldset" data-quize-section="14">
+							<div class="form-quize__icon">
+								<svg>
+									<use xlink:href='img/icons/icons-sprite.svg#quiz-icon_05'></use>
+								</svg>
+							</div>
+							<h2 class="form-quize__title form-quize__title-14">
+								How active are you
+								in a typical week?
+							</h2>
+							<div class="form-quize__items form-quize__items-08">
+								<div class="form-quize__item form-quize__item-alt">
+									<label class="form-quize__custom-checkbox form-quize__custom-checkbox-ratio">
+										<input type="radio" name="stress" class="form-quize__input">
+										<span class="form-quize__radio-checkmark"></span>
+										I train regularly
+									</label>
+								</div>
+								<div class="form-quize__item form-quize__item-alt form-quize__item-dark">
+									<label class="form-quize__custom-checkbox form-quize__custom-checkbox-ratio">
+										<input type="radio" name="stress" class="form-quize__input">
+										<span class="form-quize__radio-checkmark"></span>
+										On and off
+									</label>
+								</div>
+								<div class="form-quize__item form-quize__item-alt">
+									<label class="form-quize__custom-checkbox form-quize__custom-checkbox-ratio">
+										<input type="radio" name="stress" class="form-quize__input">
+										<span class="form-quize__radio-checkmark"></span>
+										Not much these days
+									</label>
+								</div>
+							</div>
+							<button type="button" class="form-quize__trigger-button" data-quize-trigger>
+								Next Question
+							</button>
+						</fieldset>
+						<fieldset class="form-quize__fieldset" data-quize-section="15">
+							<h2 class="form-quize__title form-quize__title-10">
+								What have you already tried?
+							</h2>
+							<div class="form-quize__subtitle form-quize__subtitle-04">
+								Select all that apply:
+							</div>
+							<div class="form-quize__items form-quize__items-grid form-quize__items-09">
+								<div class="form-quize__item ">
+									<label class="form-quize__custom-checkbox ">
+										<input type="radio" name="coffee" class="form-quize__input">
+										<span class="form-quize__checkmark"></span>
+										More coffee
+									</label>
+								</div>
+								<div class="form-quize__item ">
+									<label class="form-quize__custom-checkbox ">
+										<input type="radio" name="multivitamins" class="form-quize__input">
+										<span class="form-quize__checkmark"></span>
+										Multivitamins
+									</label>
+								</div>
+								<div class="form-quize__item ">
+									<label class="form-quize__custom-checkbox ">
+										<input type="radio" name="NMN" class="form-quize__input">
+										<span class="form-quize__checkmark"></span>
+										NMN or other supplements
+									</label>
+								</div>
+								<div class="form-quize__item ">
+									<label class="form-quize__custom-checkbox ">
+										<input type="radio" name="diet" class="form-quize__input">
+										<span class="form-quize__checkmark"></span>
+										Diet changes
+									</label>
+								</div>
+								<div class="form-quize__item ">
+									<label class="form-quize__custom-checkbox ">
+										<input type="radio" name="sleep-tracking" class="form-quize__input">
+										<span class="form-quize__checkmark"></span>
+										Sleep tracking
+									</label>
+								</div>
+								<div class="form-quize__item ">
+									<label class="form-quize__custom-checkbox ">
+										<input type="radio" name="everything" class="form-quize__input">
+										<span class="form-quize__checkmark"></span>
+										Honestly, everything
+									</label>
+								</div>
+								<div class="form-quize__item ">
+									<label class="form-quize__custom-checkbox ">
+										<input type="radio" name="nothing" class="form-quize__input">
+										<span class="form-quize__checkmark"></span>
+										Nothing yet
+									</label>
+								</div>
+
+							</div>
+							<button type="button" class="form-quize__trigger-button" data-quize-trigger>
+								Next Question
+							</button>
+						</fieldset>
+						<fieldset
+							class="form-quize__fieldset form-quize__fieldset-alt form-quize__fieldset-cw form-quize__fieldset-hide-progress"
+							data-quize-section="16" data-quize-section-no-count>
+							<h2 class="form-quize__title form-quize__title-15">
+								Good news — this is the fixable half.
+							</h2>
+
+							<div class="brochure-form-quize brochure-form-quize-columns">
+								<div class="brochure-form-quize__image">
+									<img src="img/quize-page/quize-image_02.webp"
+										alt="Good news — this is the fixable half.">
+								</div>
+								<div class="brochure-form-quize__description">
+									<p>
+										What you're describing isn't willpower. It's cellular energy — and cellular
+										energy responds.
+									</p>
+									<p>
+										Vitruvin Longevity pairs NMN with Resveratrol to support what your body needs
+										while you lose weight.
+									</p>
+									<p>
+										Let's finish up and show you what's leaking.
+									</p>
+								</div>
+							</div>
+							<button type="button"
+								class="form-quize__trigger-button form-quize__trigger-button-secondary"
+								data-quize-trigger>
+								Continue
+							</button>
+						</fieldset>
+						<fieldset class="form-quize__fieldset" data-quize-section="17">
+							<h2 class="form-quize__title form-quize__title-16">
+								If Vitruvin works for you, what would matter most?
+							</h2>
+							<div class="form-quize__items form-quize__items-10">
+								<div class="form-quize__item form-quize__item-alt">
+									<label class="form-quize__custom-checkbox form-quize__custom-checkbox-ratio">
+										<input type="radio" name="wake-up" class="form-quize__input">
+										<span class="form-quize__radio-checkmark"></span>
+										Steady energy, all day
+									</label>
+								</div>
+								<div class="form-quize__item form-quize__item-alt form-quize__item-dark">
+									<label class="form-quize__custom-checkbox form-quize__custom-checkbox-ratio">
+										<input type="radio" name="wake-up" class="form-quize__input">
+										<span class="form-quize__radio-checkmark"></span>
+										Recovering like I used to
+									</label>
+								</div>
+								<div class="form-quize__item form-quize__item-alt">
+									<label class="form-quize__custom-checkbox form-quize__custom-checkbox-ratio">
+										<input type="radio" name="wake-up" class="form-quize__input">
+										<span class="form-quize__radio-checkmark"></span>
+										Keeping muscle and strength
+									</label>
+								</div>
+								<div class="form-quize__item form-quize__item-alt">
+									<label class="form-quize__custom-checkbox form-quize__custom-checkbox-ratio">
+										<input type="radio" name="wake-up" class="form-quize__input">
+										<span class="form-quize__radio-checkmark"></span>
+										Keeping the weight off for good
+									</label>
+								</div>
+							</div>
+							<button type="button" class="form-quize__trigger-button" data-quize-trigger>
+								See Results
+							</button>
+						</fieldset>
+						<fieldset class="form-quize__fieldset form-quize__fieldset-hide-progress"
+							data-quize-section-loader data-quize-section="18" data-quize-section-no-count>
+							<h2 class="form-quize__title form-quize__title-17">
+								Finding what's holding your weight loss back…
+							</h2>
+							<div class="loader-form-quize">
+								<div class="loader-form-quize__loader-cirsles">
+									<div class="loader-container">
+										<svg width="274" height="274" viewBox="0 0 100 100" overflow="visible">
+											<g id="group-1" class="ring-group">
+												<circle cx="50" cy="50" r="50" fill="transparent" />
+												<path id="ring-1" fill="#29444D" fill-opacity="0.2" stroke="#FFF"
+													stroke-width="1" stroke-linejoin="round" />
+												<circle id="full-1" cx="50" cy="50" r="50" fill="#29444D"
+													fill-opacity="0.2" stroke="#FFF" stroke-width="1"
+													class="full-circle" />
+											</g>
+
+											<g id="group-2" class="ring-group">
+												<circle cx="50" cy="50" r="30.84" fill="transparent"
+													fill-opacity="0.2" />
+												<path id="ring-2" fill="#29444D" fill-opacity="0.3" stroke="#FFF"
+													stroke-width="1" stroke-linejoin="round" />
+												<circle id="full-2" cx="50" cy="50" r="30.84" fill="#29444D"
+													fill-opacity="0.3" stroke="#FFF" stroke-width="1"
+													class="full-circle" />
+											</g>
+
+											<g id="group-3" class="ring-group">
+												<circle cx="50" cy="50" r="19.16" fill="transparent"
+													fill-opacity="0.3" />
+												<path id="ring-3" fill="#29444D" fill-opacity="0.4" stroke="#FFF"
+													stroke-width="1" stroke-linejoin="round" />
+												<circle id="full-3" cx="50" cy="50" r="19.16" fill="#29444D"
+													fill-opacity="0.4" stroke="#FFF" stroke-width="1"
+													class="full-circle" />
+											</g>
+
+											<g id="group-4" class="ring-group">
+												<circle cx="50" cy="50" r="11.86" fill="transparent"
+													fill-opacity="0.4" />
+												<path id="ring-4" fill="#29444d" stroke="#FFF" stroke-width="1"
+													stroke-linejoin="round" />
+												<circle id="full-4" cx="50" cy="50" r="11.86" fill="#29444d"
+													stroke="#FFF" stroke-width="1" class="full-circle" />
+											</g>
+										</svg>
+									</div>
+								</div>
+								<ul class="loader-form-quize__list">
+									<li class="loader-form-quize__item">
+										<span class="loader-form-quize__icon">
+											<svg>
+												<use xlink:href='img/icons/icons-sprite.svg#checkmark'></use>
+											</svg>
+										</span>
+										<span class="loader-form-quize__text">
+											Reading your energy pattern…
+										</span>
+									</li>
+									<li class="loader-form-quize__item">
+										<span class="loader-form-quize__icon">
+											<svg>
+												<use xlink:href='img/icons/icons-sprite.svg#checkmark'></use>
+											</svg>
+										</span>
+										<span class="loader-form-quize__text">
+											Weighing recovery and sleep signals…
+										</span>
+									</li>
+									<li class="loader-form-quize__item">
+										<span class="loader-form-quize__icon">
+											<svg>
+												<use xlink:href='img/icons/icons-sprite.svg#checkmark'></use>
+											</svg>
+										</span>
+										<span class="loader-form-quize__text">
+											Checking what a deficit is costing you…
+										</span>
+									</li>
+									<li class="loader-form-quize__item">
+										<span class="loader-form-quize__icon">
+											<svg>
+												<use xlink:href='img/icons/icons-sprite.svg#checkmark'></use>
+											</svg>
+										</span>
+										<span class="loader-form-quize__text">
+											Building your plan…
+										</span>
+									</li>
+								</ul>
+							</div>
+
+						</fieldset>
+						<fieldset class="form-quize__fieldset  form-quize__fieldset-hide-progress"
+							data-quize-section="19" data-quize-section-no-count>
+							<h2 class="form-quize__title form-quize__title-18">
+								Your results are ready.
+							</h2>
+
+							<div class="details-form-quize">
+								<div class="details-form-quize__items">
+									<div class="details-form-quize__item">
+										<span class="details-form-quize__icon">
+											<svg>
+												<use xlink:href='img/icons/icons-sprite.svg#checkmark'></use>
+											</svg>
+										</span>
+										<span class="details-form-quize__text">
+											What's holding your weight loss back — ranked
+										</span>
+									</div>
+									<div class="details-form-quize__item">
+										<span class="details-form-quize__icon">
+											<svg>
+												<use xlink:href='img/icons/icons-sprite.svg#checkmark'></use>
+											</svg>
+										</span>
+										<span class="details-form-quize__text">
+											The daily routine that plugs it
+										</span>
+									</div>
+									<div class="details-form-quize__item">
+										<span class="details-form-quize__icon">
+											<svg>
+												<use xlink:href='img/icons/icons-sprite.svg#checkmark'></use>
+											</svg>
+										</span>
+										<span class="details-form-quize__text details-form-quize__text-b">
+											<span>Your 20% code –</span> applied automatically at checkout
+										</span>
+									</div>
+								</div>
+							</div>
+
+							<input required type="email" name="email"
+								class="params-form-quize__input params-form-quize__input-alt"
+								placeholder="Enter your e-mail">
+							<button type="button" class="form-quize__trigger-button form-quize__trigger-button-02"
+								data-quize-trigger>
+								Show my results
+							</button>
+							<div class="form-quize__message">
+								No spam — your results plus a few emails about what they mean. Unsubscribe anytime.
+							</div>
+						</fieldset>
+						<fieldset
+							class="form-quize__fieldset  form-quize__fieldset-hide-progress form-quize__fieldset-mw"
+							data-quize-section="20" data-quize-section-no-count>
+							<div class="form-quize__label">
+								YOUR RESULT
+							</div>
+							<h2 class="form-quize__title form-quize__title-19">
+								We found 3 things holding your weight loss back.
+							</h2>
+							<div class="results-form-quize">
+								<div class="results-form-quize__items">
+									<article class="results-form-quize__item results-form-quize__item-alt">
+										<div class="results-form-quize__header">
+											<h3 class="results-form-quize__label">
+												your biggest one
+											</h3>
+										</div>
+
+										<div class="results-form-quize__body">
+											<div class="results-form-quize__visual">
+												<div class="results-form-quize__icon-wrapper">
+													<div class="results-form-quize__icon">
+														<svg>
+															<use xlink:href='img/icons/icons-sprite.svg#quiz-icon_06'>
+															</use>
+														</svg>
+													</div>
+												</div>
+												<div
+													class="results-form-quize__indicator results-form-quize__indicator-01 --hight">
+													HIGH
+												</div>
+											</div>
+											<div class="results-form-quize__info">
+												<h2 class="results-form-quize__title">
+													Your body is burning muscle along with the fat
+												</h2>
+												<div class="results-form-quize__subtitle">
+													Fast weight loss doesn't choose what it takes — and muscle is what
+													keeps
+													the weight off.
+												</div>
+											</div>
+										</div>
+									</article>
+									<article class="results-form-quize__item">
+										<div class="results-form-quize__body">
+											<div class="results-form-quize__visual">
+												<div
+													class="results-form-quize__icon-wrapper results-form-quize__icon-wrapper-alt">
+													<div class="results-form-quize__icon">
+														<svg>
+															<use xlink:href='img/icons/icons-sprite.svg#quiz-icon_07'>
+															</use>
+														</svg>
+													</div>
+												</div>
+												<div
+													class="results-form-quize__indicator results-form-quize__indicator-02 --moderate">
+													MODERATE
+												</div>
+											</div>
+											<div class="results-form-quize__info">
+												<h2 class="results-form-quize__title">
+													Your cells are underfueled for the deficit
+												</h2>
+												<div class="results-form-quize__subtitle">
+													That's the 3pm fade and the heavy mornings.
+												</div>
+											</div>
+										</div>
+									</article>
+									<article class="results-form-quize__item">
+										<div class="results-form-quize__body">
+											<div class="results-form-quize__visual">
+												<div
+													class="results-form-quize__icon-wrapper results-form-quize__icon-wrapper-alt">
+													<div class="results-form-quize__icon">
+														<svg>
+															<use xlink:href='img/icons/icons-sprite.svg#quiz-icon_08'>
+															</use>
+														</svg>
+													</div>
+												</div>
+												<div
+													class="results-form-quize__indicator results-form-quize__indicator-03 --moderate">
+													MODERATE
+												</div>
+											</div>
+											<div class="results-form-quize__info">
+												<h2 class="results-form-quize__title">
+													Recovery isn't keeping up
+												</h2>
+												<div class="results-form-quize__subtitle">
+													You're asking more of your body while giving it less.
+												</div>
+											</div>
+										</div>
+									</article>
+								</div>
+								<div class="results-form-quize__stats">
+									<div class="results-form-quize__stat results-form-quize__stat-bmi">
+										BMI
+										<span>
+											29.4
+										</span>
+									</div>
+									<div class="results-form-quize__stat results-form-quize__stat-bmi">
+										Based on your 14 answers
+									</div>
+								</div>
+							</div>
+							<div class="form-quize__message form-quize__message-02">
+								Based on your answers — a lifestyle read, not a medical diagnosis.
+							</div>
+							<button type="button" class="form-quize__trigger-button form-quize__trigger-button-03"
+								data-quize-trigger>
+								See your biggest one
+							</button>
+
+						</fieldset>
+						<fieldset
+							class="form-quize__fieldset  form-quize__fieldset-hide-progress form-quize__fieldset-mw"
+							data-quize-section="21" data-quize-section-no-count>
+							<div class="form-quize__label form-quize__label-02">
+								YOUR BIGGEST LEAK
+							</div>
+							<div class="leak-form-quize">
+								<div class="leak-form-quize__body">
+									<div class="leak-form-quize__image">
+										<svg>
+											<use xlink:href='img/icons/icons-sprite.svg#quiz-icon_09'></use>
+										</svg>
+									</div>
+									<div class="leak-form-quize__info">
+										<h2 class="leak-form-quize__title">
+											The
+											Drain.
+										</h2>
+										<div class="leak-form-quize__description">
+											Your body is funding your calorie deficit out of energy and muscle — not
+											just fat. That's why the scale can move while
+											you feel more tired and weaker.
+										</div>
+									</div>
+								</div>
+							</div>
+							<button type="button" class="form-quize__trigger-button form-quize__trigger-button-s form-quize__trigger-button-03"
+								data-quize-trigger>
+								Why does this happen?
+							</button>
+
+						</fieldset>
+						<fieldset
+							class="form-quize__fieldset  form-quize__fieldset-hide-progress form-quize__fieldset-mw"
+							data-quize-section="22" data-quize-section-no-count>
+
+							<h2 class="form-quize__title form-quize__title-20">
+								You told us:
+							</h2>
+							<div class="problems-form-quize">
+								<div class="problems-form-quize__items">
+									<div class="problems-form-quize__item">
+										“I plateau after a few weeks”
+									</div>
+									<div class="problems-form-quize__item">
+										“Tired by mid-afternoon”
+									</div>
+									<div class="problems-form-quize__item">
+										“Weaker lifts”
+									</div>
+								</div>
+							</div>
+							<div class="form-quize__message form-quize__message-03">
+								That combination is the classic <strong>Drain pattern</strong> — effort going in,
+								results leaking out.
+							</div>
+							<button type="button" class="form-quize__trigger-button form-quize__trigger-button-s form-quize__trigger-button-03"
+								data-quize-trigger>
+								See the science
+							</button>
+
+						</fieldset>
+						<fieldset
+							class="form-quize__fieldset  form-quize__fieldset-hide-progress form-quize__fieldset-mw form-quize__fieldset-mb"
+							data-quize-section="23" data-quize-section-no-count>
+
+							<h2 class="form-quize__title form-quize__title-21">
+								Eating less
+								is half the job.
+							</h2>
+
+							<div class="recommendations-form-quize">
+								<h3 class="recommendations-form-quize__title">
+									~50% lower NAD+ by your 40s than in your 20s.
+								</h3>
+								<div class="recommendations-form-quize__image">
+									<img src="img/quize-page/quize-image_03.png"
+										alt="~50% lower NAD+ by your 40s than in your 20s.">
+								</div>
+								<div class="recommendations-form-quize__description">
+									Illustrative — typical age-related decline.
+								</div>
+								<div class="recommendations-form-quize__text">
+									<p>
+										Your cells run on NAD+ — it's how they turn food and stored fat into energy.
+										NAD+ falls with age on its own.
+									</p>
+									<p>
+										Put a calorie deficit on top, and you're asking your cells to do their hardest
+										work — converting fat into fuel — with
+										the least support they've ever had. That gap is the drain.
+									</p>
+								</div>
+							</div>
+							<button type="button" class="form-quize__trigger-button form-quize__trigger-button-s form-quize__trigger-button-03"
+								data-quize-trigger>
+								So what plugs it?
+							</button>
+
+						</fieldset>
+						<fieldset
+							class="form-quize__fieldset  form-quize__fieldset-hide-progress form-quize__fieldset-mw "
+							data-quize-section="24" data-quize-section-no-count>
+
+							<h2 class="form-quize__title form-quize__title-22">
+								The second half
+								of the job.
+							</h2>
+							<div class="info-form-quize">
+								<div class="info-form-quize__wrapper">
+									<div class="info-form-quize__image">
+										<img src="img/quize-page/quize-image_04.webp" alt="Vitruvin">
+									</div>
+									<div class="info-form-quize__ingredients">
+										<div class="info-form-quize__ingredient">
+											<span class="info-form-quize__ingredient-name">
+												NMN
+											</span>
+											<span class="info-form-quize__ingredient-dose">
+												500mg
+											</span>
+										</div>
+										<div class="info-form-quize__ingredient">
+											<span class="info-form-quize__ingredient-name">
+												Trans-Resveratrol
+											</span>
+											<span class="info-form-quize__ingredient-dose">
+												500mg
+											</span>
+										</div>
+										<div class="info-form-quize__ingredient">
+											+ Piperine
+										</div>
+										<div class="info-form-quize__ingredient">
+											Lab-tested
+										</div>
+									</div>
+								</div>
+								<div class="info-form-quize__items">
+									<div class="info-form-quize__item">
+										<div class="info-form-quize__icon">
+											<img src="img/quize-page/quize-icon_01.png" alt="info quize icon">
+										</div>
+										<div class="info-form-quize__advantage">
+											Helps your body burn fat for fuel
+										</div>
+									</div>
+									<div class="info-form-quize__item">
+										<div class="info-form-quize__icon">
+											<img src="img/quize-page/quize-icon_02.png" alt="info quize icon">
+										</div>
+										<div class="info-form-quize__advantage">
+											Supports energy while you eat less
+										</div>
+									</div>
+									<div class="info-form-quize__item">
+										<div class="info-form-quize__icon">
+											<img src="img/quize-page/quize-icon_03.png" alt="info quize icon">
+										</div>
+										<div class="info-form-quize__advantage">
+											Helps preserve lean muscle (with protein + training)
+										</div>
+									</div>
+									<div class="info-form-quize__item">
+										<div class="info-form-quize__icon">
+											<img src="img/quize-page/quize-icon_04.png" alt="info quize icon">
+										</div>
+										<div class="info-form-quize__advantage">
+											Supports
+											a healthier metabolism
+										</div>
+									</div>
+									<div class="info-form-quize__item">
+										<div class="info-form-quize__icon">
+											<img src="img/quize-page/quize-icon_05.png" alt="info quize icon">
+										</div>
+										<div class="info-form-quize__advantage">
+											Builds the base for keeping it off
+										</div>
+									</div>
+								</div>
+							</div>
+							<button type="button" class="form-quize__trigger-button form-quize__trigger-button-s form-quize__trigger-button-03"
+								data-quize-trigger>
+								Continue
+							</button>
+
+						</fieldset>
+						<fieldset
+							class="form-quize__fieldset  form-quize__fieldset-hide-progress form-quize__fieldset-mw"
+							data-quize-section="25" data-quize-section-no-count>
+
+							<h2 class="form-quize__title form-quize__title-23">
+								What your GLP-1 covers — and what it doesn't.
+							</h2>
+
+							<div class="covers-form-quize">
+								<div class="covers-form-quize__item">
+									<div class="covers-form-quize__name">
+										Appetite
+									</div>
+									<div class="covers-form-quize__details">
+										<div class="covers-form-quize__icon covers-form-quize__icon-alt">
+											<svg>
+												<use xlink:href='img/icons/icons-sprite.svg#checkmark'></use>
+											</svg>
+										</div>
+										<div class="covers-form-quize__description">
+											Handled (by your GLP-1, your diet, your discipline)
+										</div>
+									</div>
+								</div>
+								<div class="covers-form-quize__body">
+									<div class="covers-form-quize__item">
+										<div class="covers-form-quize__name">
+											Cellular energy
+										</div>
+										<div class="covers-form-quize__details">
+											<div class="covers-form-quize__icon">
+												<svg>
+													<use xlink:href='img/icons/icons-sprite.svg#cross'></use>
+												</svg>
+											</div>
+											<div class="covers-form-quize__description">
+												Not covered
+											</div>
+										</div>
+									</div>
+									<div class="covers-form-quize__item">
+										<div class="covers-form-quize__name">
+											Metabolism after the diet
+										</div>
+										<div class="covers-form-quize__details">
+											<div class="covers-form-quize__icon">
+												<svg>
+													<use xlink:href='img/icons/icons-sprite.svg#cross'></use>
+												</svg>
+											</div>
+											<div class="covers-form-quize__description">
+												Not covered
+											</div>
+										</div>
+									</div>
+									<div class="covers-form-quize__item">
+										<div class="covers-form-quize__name">
+											Lean muscle
+										</div>
+										<div class="covers-form-quize__details">
+											<div class="covers-form-quize__icon">
+												<svg>
+													<use xlink:href='img/icons/icons-sprite.svg#cross'></use>
+												</svg>
+											</div>
+											<div class="covers-form-quize__description">
+												Not covered
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="form-quize__message form-quize__message-04">
+								Vitruvin is built for the right column.
+								<strong>Keep your doctor in the loop about your medication.</strong>
+							</div>
+							<button type="button" class="form-quize__trigger-button form-quize__trigger-button-s form-quize__trigger-button-03"
+								data-quize-trigger>
+								Continue
+							</button>
+
+						</fieldset>
+						<fieldset
+							class="form-quize__fieldset  form-quize__fieldset-hide-progress form-quize__fieldset-mw "
+							data-quize-section="26" data-quize-section-no-count>
+
+							<h2 class="form-quize__title form-quize__title-24">
+								People feel it around week four.
+							</h2>
+
+
+							<div class="review-form-quize">
+								<div class="review-form-quize__body">
+									<div class="review-form-quize__stars">
+										<div class="review-form-quize__star">
+											<svg>
+												<use xlink:href='img/icons/icons-sprite.svg#rating-star'></use>
+											</svg>
+										</div>
+										<div class="review-form-quize__star">
+											<svg>
+												<use xlink:href='img/icons/icons-sprite.svg#rating-star'></use>
+											</svg>
+										</div>
+										<div class="review-form-quize__star">
+											<svg>
+												<use xlink:href='img/icons/icons-sprite.svg#rating-star'></use>
+											</svg>
+										</div>
+										<div class="review-form-quize__star">
+											<svg>
+												<use xlink:href='img/icons/icons-sprite.svg#rating-star'></use>
+											</svg>
+										</div>
+										<div class="review-form-quize__star">
+											<svg>
+												<use xlink:href='img/icons/icons-sprite.svg#rating-star'></use>
+											</svg>
+										</div>
+									</div>
+									<div class="review-form-quize__image">
+										<img src="img/quize-page/quize-image_05.webp" alt="Lauryna">
+									</div>
+									<div class="review-form-quize__info">
+										<div class="review-form-quize__text">
+											“On a GLP-1 and the afternoons were brutal.
+											4 weeks in, they're just not anymore.”
+										</div>
+										<div class="review-form-quize__details">
+											<div class="review-form-quize__name">
+												Lauryna
+											</div>
+											<div class="review-form-quize__position">
+												Verified Buyer
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="review-form-quize__footer">
+									<div class="review-form-quize__footer-item review-form-quize__rating">
+										<div class="rating">
+											<div class="rating__body">
+												<div class="rating__items rating__general">
+													<div class="rating__item">
+														<svg>
+															<use
+																xlink:href='img/icons/icons-sprite.svg#rating-star-alt'>
+															</use>
+														</svg>
+													</div>
+													<div class="rating__item">
+														<svg>
+															<use
+																xlink:href='img/icons/icons-sprite.svg#rating-star-alt'>
+															</use>
+														</svg>
+													</div>
+													<div class="rating__item">
+														<svg>
+															<use
+																xlink:href='img/icons/icons-sprite.svg#rating-star-alt'>
+															</use>
+														</svg>
+													</div>
+													<div class="rating__item">
+														<svg>
+															<use
+																xlink:href='img/icons/icons-sprite.svg#rating-star-alt'>
+															</use>
+														</svg>
+													</div>
+													<div class="rating__item">
+														<svg>
+															<use
+																xlink:href='img/icons/icons-sprite.svg#rating-star-alt'>
+															</use>
+														</svg>
+													</div>
+												</div>
+												<div class="rating__items rating__current">
+													<div class="rating__item">
+														<svg>
+															<use
+																xlink:href='img/icons/icons-sprite.svg#rating-star-alt'>
+															</use>
+														</svg>
+													</div>
+													<div class="rating__item">
+														<svg>
+															<use
+																xlink:href='img/icons/icons-sprite.svg#rating-star-alt'>
+															</use>
+														</svg>
+													</div>
+													<div class="rating__item">
+														<svg>
+															<use
+																xlink:href='img/icons/icons-sprite.svg#rating-star-alt'>
+															</use>
+														</svg>
+													</div>
+													<div class="rating__item">
+														<svg>
+															<use
+																xlink:href='img/icons/icons-sprite.svg#rating-star-alt'>
+															</use>
+														</svg>
+													</div>
+													<div class="rating__item">
+														<svg>
+															<use
+																xlink:href='img/icons/icons-sprite.svg#rating-star-alt'>
+															</use>
+														</svg>
+													</div>
+												</div>
+											</div>
+											<div class="rating__footer">
+												<div class="rating__value">
+													4.9
+												</div>
+												<div class="rating__counter">
+													(230)
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="review-form-quize__footer-item">
+										Lab-tested
+									</div>
+									<div class="review-form-quize__footer-item">
+										<span>Made in <strong>USA</strong></span>
+									</div>
+								</div>
+							</div>
+							<a href="product.html"
+								class="form-quize__trigger-button form-quize__trigger-button-s form-quize__trigger-button-03" data-quize-trigger>
+								See my plan
+							</a>
+
+						</fieldset>
+						<footer class="footer-form-quize">
+							<div class="footer-form-quize__items" data-quize-progress>
+
+							</div>
+						</footer>
+					</form>
+					
+				</div>
+				<a href="#" class="quize__button">
+					<span class="quize__button-text">
+						CALL US NOW
+					</span>
+					<span class="quize__button-icon">
+						<svg>
+							<use xlink:href='img/icons/icons-sprite.svg#button-arrow'></use>
+						</svg>
+					</span>
+				</a>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<a href="/" class="footer__logo" aria-label="logo/ homepage link">
+					<svg>
+						<use xlink:href='img/icons/icons-sprite.svg#vertical-logo'></use>
+					</svg>
+				</a>
+				<div class="footer__actions">
+					<div class="footer__column">
+						<h2 class="footer__title footer__title-alt">
+							SUPPORT
+						</h2>
+						<nav class="footer__menu">
+							<ul class="footer__list">
+								<li class="footer__item">
+									<a href="#" class="footer__link">
+										Affiliate
+									</a>
+								</li>
+								<li class="footer__item">
+									<a href="#" class="footer__link">
+										Retailer Referral
+									</a>
+								</li>
+								<li class="footer__item">
+									<a href="#" class="footer__link">
+										Terms of Service
+									</a>
+								</li>
+								<li class="footer__item">
+									<a href="#" class="footer__link">
+										Shipping Information
+									</a>
+								</li>
+								<li class="footer__item">
+									<a href="#" class="footer__link">
+										Privacy Policy
+									</a>
+								</li>
+								<li class="footer__item">
+									<a href="#" class="footer__link">
+										Subscription Policy
+									</a>
+								</li>
+								<li class="footer__item">
+									<a href="#" class="footer__link">
+										Refund Policy
+									</a>
+								</li>
+								<li class="footer__item">
+									<a href="#" class="footer__link">
+										Contact Us
+									</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<div class="footer__column">
+						<h2 class="footer__title">
+							FOLLOW US
+						</h2>
+						<nav class="footer__menu">
+							<ul class="footer__list">
+								<li class="footer__item">
+									<a href="#" class="footer__link">
+										<span class="footer__icon">
+											<svg>
+												<use xlink:href='img/icons/icons-sprite.svg#social_01'></use>
+											</svg>
+										</span>
+										@vitruvinhealth
+									</a>
+								</li>
+								<li class="footer__item">
+									<a href="#" class="footer__link">
+										<span class="footer__icon">
+											<svg>
+												<use xlink:href='img/icons/icons-sprite.svg#social_02'></use>
+											</svg>
+										</span>
+										@vitruvinhealth
+									</a>
+								</li>
+							</ul>
+						</nav>
+						<div class="footer__copy">
+							<span>© 2026 Vitruvin.</span>
+							All rights reserved.
+						</div>
+					</div>
+				</div>
+				<div class="footer__column">
+					<h2 class="footer__title">
+						NEWSLETTER
+					</h2>
+					<div class="footer__text">
+						Get the latest info on products and how to increase your health-span and <strong>get 10% off
+							your first order:</strong>
+					</div>
+					<form action="#" class="form-footer">
+						<div class="form-footer__item">
+							<input type="email" id="userEmail" name="User Email" autocomplete="email"
+								class="form-footer__input" placeholder="Enter Your Email">
+							<button type="submit" class="form-footer__button">
+								Submit
+							</button>
+						</div>
+					</form>
+					<h3 class="footer__title">
+						DISCLAIMER
+					</h3>
+					<div class="footer__text">
+						*These statements have not been evaluated by the Food and Drug
+						Administration. This product is not intended to diagnose, treat,
+						cure, or prevent any disease.
+					</div>
+				</div>
+				<div class="footer__copy footer__copy-tablet">
+					<span>© 2026 Vitruvin.</span>
+					All rights reserved.
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="js/nouislider.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+
+</html>
