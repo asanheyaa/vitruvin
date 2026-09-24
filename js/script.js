@@ -29,6 +29,7 @@ if (quizes.length > 0) {
 						if (isValid) {
 							removeClassesFromActiveSection(activeSections)
 							addClassesToCurrentSection(currentSections)
+							scrollToTopSection(quize)
 							if (trigerParent.dataset.quizeSectionNoCount === undefined) {
 								const progressBar = quize.querySelector('[data-quize-progress]');
 
@@ -49,6 +50,7 @@ if (quizes.length > 0) {
 					} else {
 						removeClassesFromActiveSection(activeSections)
 						addClassesToCurrentSection(currentSections)
+						scrollToTopSection(quize)
 					}
 				}
 
@@ -76,6 +78,33 @@ if (quizes.length > 0) {
 			}
 		}
 
+		const backButtons = document.querySelectorAll('[data-quize-back]')
+		if (backButtons.length > 0){
+			backButtons.forEach(backButton => {
+				backButton.addEventListener('click', (e)=>{
+					const parentSection = backButton.closest('[data-quize-section]')
+					const sectionId = parentSection.dataset.quizeSection
+					const previousSections = document.querySelectorAll(`[data-quize-section="${sectionId - 1}"]`);
+				if (previousSections.length > 0){
+					const activeSections = document.querySelectorAll('[data-quize-section]._active');
+					removeClassesFromActiveSection(activeSections)
+					addClassesToCurrentSection(previousSections)
+
+					if (parentSection.dataset.quizeSectionNoCount === undefined) {
+								const progressBar = quize.querySelector('[data-quize-progress]');
+
+								const inactiveProgressBars = progressBar.querySelectorAll(':scope > *._active');
+						console.log(inactiveProgressBars);
+								if (inactiveProgressBars.length > 1) {
+									inactiveProgressBars[inactiveProgressBars.length - 1].classList.remove('_active');
+								}
+							}
+				}
+				})
+				
+			});
+		}
+
 	
 	});
 
@@ -94,6 +123,15 @@ function addClassesToCurrentSection(currentSections) {
 		currentSection.classList.add('_anim')
 	});
 }
+
+function scrollToTopSection(section) {
+	const header = document.querySelector('.quize-header');
+	section.scrollIntoView({
+  behavior: 'smooth', // Анімація: 'smooth' (плавно) або 'auto' (миттєво, за замовчуванням)
+  block: 'start',    // Вертикальне вирівнювання: 'start', 'center', 'end', 'nearest'
+});
+}
+
 function validateInputs(inputs) {
 	const textInputs = inputs.filter(i => i.type === 'text' || i.type === 'number' || i.type === 'email');
 	const isTextValid = textInputs.length === 0 || textInputs.every(input => {
@@ -289,7 +327,7 @@ function selectMenu() {
 	// data-select-menu-drop-down body of dropdown menu
 	// data-select-menu-option options of dropdown menu
 
-	if (selects) {
+	if (selects.length) {
 
 		document.documentElement.addEventListener('click', collapseSelects)
 
@@ -314,15 +352,23 @@ function selectMenu() {
 		}
 
 		function selectChoose(e) {
-			const parent = e.target.closest('[data-select-menu]'),
-				selectValue = parent.querySelector('[data-select-menu-value]'),
-				selectBody = parent.querySelector('[data-select-menu-drop-down]');
-			let valueItem = this.innerText;
-			let currentValue = selectValue.innerText
-			this.innerHTML = currentValue
-			selectValue.innerHTML = valueItem;
+
+			
+			const parents = document.querySelectorAll('[data-select-menu]');
+			parents.forEach(parent => {
+				const selectValue = parent.querySelector('[data-select-menu-value]'),
+				selectBody = parent.querySelector('[data-select-menu-drop-down]'),
+				selectOption = parent.querySelector('[data-select-menu-option]');
+				
+				let prevValue = selectValue.textContent
+				let nextValue = selectOption.textContent
+				selectValue.textContent = nextValue
+				selectOption.textContent = prevValue
 			parent.classList.remove('_active')
 			_slideUp(selectBody, 300)
+			});
+				
+			
 		}
 
 		function collapseSelects(e) {
@@ -418,7 +464,7 @@ selectMenu()
 
 
 // loading 
-const durations = [10, 5, 3, 7];
+const durations = [0.5, 0.5, 0.5, 0.5];
 
 function getCoordinatesForPercent(percent, radius) {
 	const angle = (percent / 100) * (2 * Math.PI) - Math.PI / 2;
@@ -613,5 +659,29 @@ if (animBlock) {
 		} else {
 			animBlock.classList.remove('_active'); 
 		}
+	});
+}
+
+
+//product choose
+
+const productChooses = document.querySelectorAll('[data-product-choose]');
+
+if(productChooses.length){
+	productChooses.forEach(productChoose => {
+		const productItems = productChoose.querySelectorAll('[data-product-choose-item]');
+
+		productItems.forEach(productItem => {
+			productItem.addEventListener('click', (e)=>{
+				const activeProduct = productChoose.querySelector('[data-product-choose-item]._active')
+
+				if (activeProduct !== productItem){
+					activeProduct.classList.remove('_active')
+					productItem.classList.add('_active')
+					
+				}
+
+			})
+		});
 	});
 }
