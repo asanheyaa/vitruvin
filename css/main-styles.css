@@ -1762,6 +1762,22 @@ body:has(.sticky-cta) .footer {
     margin-top: calc(30px + 20 * (100vw - 390px) / 1070);
   }
 }
+.form-quize__label-01 {
+  margin-top: 100px;
+}
+@media (max-width: 1460px) {
+  .form-quize__label-01 {
+    margin-top: calc(90px + 10 * (100vw - 390px) / 1070);
+  }
+}
+.form-quize__label-01 {
+  margin-bottom: 25px;
+}
+@media (max-width: 1460px) {
+  .form-quize__label-01 {
+    margin-bottom: calc(5px + 20 * (100vw - 390px) / 1070);
+  }
+}
 .form-quize__label-02 {
   margin-top: 100px;
 }
@@ -2076,14 +2092,6 @@ body:has(.sticky-cta) .footer {
 @media (max-width: 1460px) {
   .form-quize__title-18 {
     margin-bottom: calc(25px + 25 * (100vw - 390px) / 1070);
-  }
-}
-.form-quize__title-19 {
-  margin-top: 45px;
-}
-@media (max-width: 1460px) {
-  .form-quize__title-19 {
-    margin-top: calc(5px + 40 * (100vw - 390px) / 1070);
   }
 }
 .form-quize__title-19 {
@@ -2508,6 +2516,7 @@ body:has(.sticky-cta) .footer {
   width: 0;
   height: 0;
   margin: 0;
+  font-size: 16;
 }
 .form-quize__input:checked ~ .form-quize__radio-checkmark::after {
   opacity: 1;
@@ -2634,6 +2643,14 @@ body:has(.sticky-cta) .footer {
 @media (max-width: 1460px) {
   .form-quize__trigger-button-03 {
     margin-bottom: calc(0px + 25 * (100vw - 390px) / 1070);
+  }
+}
+.form-quize__trigger-button-04 {
+  margin-bottom: 75px;
+}
+@media (max-width: 1460px) {
+  .form-quize__trigger-button-04 {
+    margin-bottom: calc(0px + 75 * (100vw - 390px) / 1070);
   }
 }
 .form-quize__trigger-button-s {
@@ -2833,6 +2850,9 @@ body:has(.sticky-cta) .footer {
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
   width: 100%;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1;
 }
 @media (min-width: 480px) {
   .params-form-quize__input {
@@ -3201,6 +3221,7 @@ body:has(.sticky-cta) .footer {
           transform: translate(-50%, -50%);
   opacity: 0;
   visibility: hidden;
+  font-size: 16px;
 }
 .columns-form-quize__icon {
   width: 28px;
@@ -3664,7 +3685,7 @@ body:has(.sticky-cta) .footer {
 }
 .results-form-quize__stats {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 15px;
 }
 @media (max-width: 1460px) {
