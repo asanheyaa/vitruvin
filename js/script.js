@@ -126,8 +126,8 @@ function addClassesToCurrentSection(currentSections) {
 function scrollToTopSection(section) {
 	const header = document.querySelector('.quize-header');
 	section.scrollIntoView({
-  behavior: 'smooth', // Анімація: 'smooth' (плавно) або 'auto' (миттєво, за замовчуванням)
-  block: 'start',    // Вертикальне вирівнювання: 'start', 'center', 'end', 'nearest'
+  behavior: 'smooth',
+  block: 'start',   
 });
 }
 
