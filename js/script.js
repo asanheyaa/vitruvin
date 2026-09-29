@@ -94,7 +94,6 @@ if (quizes.length > 0) {
 								const progressBar = quize.querySelector('[data-quize-progress]');
 
 								const inactiveProgressBars = progressBar.querySelectorAll(':scope > *._active');
-						console.log(inactiveProgressBars);
 								if (inactiveProgressBars.length > 1) {
 									inactiveProgressBars[inactiveProgressBars.length - 1].classList.remove('_active');
 								}

@@ -3685,7 +3685,7 @@ body:has(.sticky-cta) .footer {
 }
 .results-form-quize__stats {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   gap: 15px;
 }
 @media (max-width: 1460px) {
@@ -3699,6 +3699,11 @@ body:has(.sticky-cta) .footer {
 @media (max-width: 1460px) {
   .results-form-quize__stats {
     margin-bottom: calc(10px + 5 * (100vw - 390px) / 1070);
+  }
+}
+@media (min-width: 480px) {
+  .results-form-quize__stats {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 .results-form-quize__stat {
@@ -6475,6 +6480,11 @@ svg {
   top: 25px;
   left: 15px;
 }
+@media (max-width: 767.98px) {
+  .back-button {
+    padding: 15px;
+  }
+}
 .back-button__icon {
   width: 6px;
   height: 6px;
@@ -6491,4 +6501,9 @@ svg {
 .back-button__icon svg {
   width: 6px;
   height: 6px;
+}
+@media (max-width: 767.98px) {
+  .back-button__text {
+    display: none;
+  }
 }
